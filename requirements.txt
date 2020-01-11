@@ -1,0 +1,7 @@
+SpeechRecognition==3.8.1
+PyAudio==0.2.11
+gTTS==2.1.0
+playsound==1.2.2
+
+# macOS only below
+# pyobjc==6.1
