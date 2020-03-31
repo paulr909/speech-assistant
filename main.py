@@ -14,14 +14,15 @@ def record_audio(ask=False):
     with sr.Microphone() as source:
         if ask:
             alexis_speak(ask)
-        audio = r.listen(source)
-        # audio = r.listen(source, phrase_time_limit=5)
+        # audio = r.listen(source)
+        audio = r.listen(source, phrase_time_limit=5)
 
         voice_data = ""
         try:
             voice_data = r.recognize_google(audio)
         except sr.UnknownValueError:
-            alexis_speak("Sorry, I did not get that")
+            print("Waiting...")
+            # alexis_speak("Sorry, I did not get that")
         except sr.RequestError:
             alexis_speak("Sorry, my speech service is down")
         return voice_data
@@ -43,7 +44,7 @@ def respond(voice_data):
     if "what is the date" in voice_data:
         alexis_speak(ctime())
     if "search" in voice_data:
-        search = record_audio("What do you want to search for?")
+        search = record_audio("Search for?")
         url = f"https://google.com/search?q={search}"
         webbrowser.get().open(url)
         alexis_speak(f"Here is what I found for {search}")
