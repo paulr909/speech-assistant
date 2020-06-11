@@ -5,7 +5,7 @@ Speech recognition and text-to-speech.
 ### Dependencies
 
 ```
-pip install speechrecognition pyaudio gTTS playsound PyObjC
+pip install -r requirements.txt
 ```
 
 ### Voice Commands
