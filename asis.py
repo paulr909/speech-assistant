@@ -1,5 +1,5 @@
 import speech_recognition as sr  # recognise speech
-import playsound  # to play an audio file
+import playsound  # play audio file
 from gtts import gTTS  # google text to speech
 import random
 from time import ctime  # get time details
@@ -7,7 +7,7 @@ import webbrowser  # open browser
 import ssl
 import certifi
 import time
-import os  # to remove created audio files
+import os
 from PIL import Image
 import subprocess
 import pyautogui  # screenshot
