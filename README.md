@@ -1,6 +1,6 @@
 # Speech Assistant
 
-Python app that uses speech recognition and Google text-to-speech to answer speech commands.
+Speech recognition and text-to-speech.
 
 ### Dependencies
 
