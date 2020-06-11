@@ -10,8 +10,6 @@ pip install -r requirements.txt
 
 ### Voice Commands
 
-Commands that exist
-
 - What is your name?
 - What is the date?
 - Search?
